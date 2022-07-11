@@ -54,7 +54,7 @@ class BoxAnimation extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: sizeAnimation,
-      builder: (context, child) {
+      builder: (context, child) {  //child is recieved if it is passed as parameter in Animated Builder
         return Container(
           height: sizeAnimation.value,
           width: sizeAnimation.value,
