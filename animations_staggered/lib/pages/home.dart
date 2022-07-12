@@ -43,14 +43,11 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
-  late Animation<double> _widthTweenAnimation;
-  late Animation<double> _heightTweenAnimation;
-  late Animation<double> _textWidthTweenAnimation;
 
   @override
   void initState() {
     _animationController =
-        AnimationController(vsync: this, duration: Duration(seconds: 10));
+        AnimationController(vsync: this, duration: Duration(seconds: 1));
     _animationController.forward();
     super.initState();
   }
